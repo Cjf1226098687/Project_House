@@ -19,4 +19,9 @@ public class UserController {
     public List<User> findAll() {
         return userService.findAll();
     }
+
+    @RequestMapping("login")
+    public void login(String login, String password) {
+        System.out.println("登录");
+    }
 }
