@@ -24,4 +24,9 @@ public class UserController {
     public void login(String login, String password) {
         System.out.println("登录");
     }
+
+    @RequestMapping("logout")
+    public void logout() {
+        System.out.println("退出登录");
+    }
 }
